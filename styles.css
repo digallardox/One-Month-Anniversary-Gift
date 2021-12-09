@@ -163,3 +163,45 @@ h2,
 		background: white;
 	}
 }
+
+@media only screen and (max-width: 600px) {
+h2,
+#textOne,
+#textTwo,
+#textThree,
+#textFour,
+#textFive,
+#textSix,
+#textSeven,
+#textEight {
+	font-size: 18px;
+}
+}
+
+@media only screen and (max-width: 480px) {
+h2,
+#textOne,
+#textTwo,
+#textThree,
+#textFour,
+#textFive,
+#textSix,
+#textSeven,
+#textEight {
+	font-size: 14px;
+}
+}
+
+@media only screen and (max-width: 320px) {
+h2,
+#textOne,
+#textTwo,
+#textThree,
+#textFour,
+#textFive,
+#textSix,
+#textSeven,
+#textEight {
+	font-size: 12px;
+}
+}
