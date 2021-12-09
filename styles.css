@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+	--typeWriterSpeed: 1s;
+	--textCoverColor: #c21e56;
+}
+
+body {
+	margin: 0;
+	background-color: #c21e56;
+	font-family: 'Roboto Mono', monospace;
+	min-height: 100vh;
+	display: grid;
+	place-content: center;
+	text-align: center;
+}
+
+h2,
+#textOne,
+#textTwo,
+#textThree,
+#textFour,
+#textFive,
+#textSix,
+#textSeven,
+#textEight {
+	font-size: 24px;
+	color: white;
+	position: relative;
+	text-align: left;
+    width: max-content;
+	padding: 5px;
+}
+
+#textOne::before,
+#textTwo::before,
+#textThree::before,
+#textFour::before,
+#textFive::before,
+#textSix::before,
+#textSeven::before,
+#textEight::before,
+#textOne::after,
+#textTwo::after,
+#textThree::after,
+#textFour::after,
+#textFive::after,
+#textSix::after,
+#textSeven::after,
+#textEight::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+#textOne::before {
+	background: var(--textCoverColor);
+	animation: typewriter var(--typeWriterSpeed) 2s steps(38) forwards;
+}
+
+#textOne::after {
+	width: 0.1em;
+	background: transparent;
+	animation: typewriter var(--typeWriterSpeed) 2s steps(38) forwards,
+		blink 750ms steps(7) 6;
+}
+
+#textTwo::before {
+	background: var(--textCoverColor);
+	animation: typewriter var(--typeWriterSpeed) 6s steps(24) forwards;
+}
+
+#textTwo::after {
+	width: 0.1em;
+	background: transparent;
+	animation: typewriter var(--typeWriterSpeed) 6s steps(24) forwards,
+		blink 750ms steps(7) 6s 4;
+}
+
+#textThree::before {
+	background: var(--textCoverColor);
+	animation: typewriter var(--typeWriterSpeed) 10s steps(35) forwards;
+}
+
+#textThree::after {
+	width: 0.1em;
+	background: transparent;
+	animation: typewriter var(--typeWriterSpeed) 10s steps(35) forwards,
+		blink 750ms steps(7) 10s 4;
+}
+
+#textFour::before {
+	background: var(--textCoverColor);
+	animation: typewriter var(--typeWriterSpeed) 14s steps(34) forwards;
+}
+
+#textFour::after {
+	width: 0.1em;
+	background: transparent;
+	animation: typewriter var(--typeWriterSpeed) 14s steps(34) forwards,
+		blink 750ms steps(7) 14s 4;
+}
+
+#textFive::before {
+	background: var(--textCoverColor);
+	animation: typewriter var(--typeWriterSpeed) 18s steps(37) forwards;
+}
+
+#textFive::after {
+	width: 0.1em;
+	background: transparent;
+	animation: typewriter var(--typeWriterSpeed) 18s steps(37) forwards,
+		blink 750ms steps(7) 18s 4;
+}
+
+#textSix::before {
+	background: var(--textCoverColor);
+	animation: typewriter var(--typeWriterSpeed) 22s steps(35) forwards;
+}
+
+#textSix::after {
+	width: 0.1em;
+	background: transparent;
+	animation: typewriter var(--typeWriterSpeed) 22s steps(35) forwards,
+		blink 750ms steps(7) 22s 4;
+}
+
+#textSeven::before {
+	background: var(--textCoverColor);
+	animation: typewriter var(--typeWriterSpeed) 24s steps(18) forwards;
+}
+
+#textSeven::after {
+	width: 0.1em;
+	background: transparent;
+	animation: typewriter var(--typeWriterSpeed) 24s steps(20) forwards,
+		blink 750ms steps(7) 24s 4;
+}
+
+#textEight::before {
+	background: var(--textCoverColor);
+	animation: typewriter var(--typeWriterSpeed) 26s steps(20) forwards;
+}
+
+#textEight::after {
+	width: 0.1em;
+	background: transparent;
+	animation: typewriter var(--typeWriterSpeed) 26s steps(18) forwards,
+		blink 750ms steps(7) 28s infinite;
+}
+
+@keyframes typewriter {
+	to {
+		left: 100%;
+	}
+}
+
+@keyframes blink {
+	to {
+		background: white;
+	}
+}
