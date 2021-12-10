@@ -1,11 +1,24 @@
-let totalCallTime = 23 + 1 + 36 + 3 + 27 + 1 + 5 + 14 + 48 + 7 + 1 + 1 + 17 + 28 + 52 + 2 + 29 + 7 + 97 + 26 + 7 + 2 + 15 + 1 + 18 + 14 + 84 + 12 + 6 + 2 + 8 + 23 + 35 + 65 + 16 + 46 + 1 + 17 + 3 + 41 + 6 + 2 + 11 + 7 + 1 + 9 + 3 + 13 + 19 + 67 + 31 + 67 + 4 + 16 + 2 + 1 + 1 + 28 + 1 + 9 + 33 + 1 + 25 + 78;
-console.log(totalCallTime/60);
+let root = document.documentElement;
 
-let textLength = 'Love, Diego Gallardo';
-console.log(textLength.length);
+const textOne = document.getElementById('textOne').innerText.length;
+root.style.setProperty('--textOneSteps', textOne);
 
-// const textOne = document.getElementById('textOne').innerText.length;
-// console.log(textOne);
+const textTwo = document.getElementById('textTwo').innerText.length;
+root.style.setProperty('--textTwoSteps', textTwo);
 
-// const textTwo = document.getElementById('textTwo').innerText.length;
-// console.log(textTwo);
+const textThree = document.getElementById('textThree').innerText.length;
+root.style.setProperty('--textThreeSteps', textThree);
+
+const textFour = document.getElementById('textFour').innerText.length;
+root.style.setProperty('--textFourSteps', textFour);
+
+const textFive = document.getElementById('textFive').innerText.length;
+root.style.setProperty('--textFiveSteps', textFive);
+
+const textSix = document.getElementById('textSix').innerText.length;
+root.style.setProperty('--textSixSteps', textSix);
+
+const textSeven = document.getElementById('textSeven').innerText.length;
+root.style.setProperty('--textSevenSteps', textSeven);
+
+let totalCallTime = 1276;
