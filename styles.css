@@ -128,18 +128,6 @@ h2,
 		blink 750ms steps(7) 22s 4;
 }
 
-#textSeven::before {
-	background: var(--textCoverColor);
-	animation: typewriter var(--typeWriterSpeed) 24s steps(18) forwards;
-}
-
-#textSeven::after {
-	width: 0.1em;
-	background: transparent;
-	animation: typewriter var(--typeWriterSpeed) 24s steps(20) forwards,
-		blink 750ms steps(7) 24s 4;
-}
-
 #textEight::before {
 	background: var(--textCoverColor);
 	animation: typewriter var(--typeWriterSpeed) 26s steps(20) forwards;
@@ -148,7 +136,7 @@ h2,
 #textEight::after {
 	width: 0.1em;
 	background: transparent;
-	animation: typewriter var(--typeWriterSpeed) 26s steps(18) forwards,
+	animation: typewriter var(--typeWriterSpeed) 26s steps(20) forwards,
 		blink 750ms steps(7) 28s infinite;
 }
 
